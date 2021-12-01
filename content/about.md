@@ -11,10 +11,13 @@ Check out my [GitHub](https://github.com/matthieugouel) and [LinkedIn](https://w
 [Scholar](https://scholar.google.fr/citations?user=Ltb5srIAAAAJ&hl=fr&oi=sra) | [ORCID](https://orcid.org/0000-0003-0579-7023) | [HAL](https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=matthieu-gouel&sort=producedDate_tdate+desc)
 
 * [IP Geolocation Database Stability and Implications for Network Research]({{< ref "/posts/tma2021" >}})  
-   Matthieu Gouel, Kevin Vermeulen, Olivier Fourmaux, Timur Friedman, Robert Beverly  
+   **Matthieu Gouel**, Kevin Vermeulen, Olivier Fourmaux, Timur Friedman, Robert Beverly  
    [TMA2021](https://tma.ifip.org)
 
 ## Talks
+
+* [MPLS in Internet Topologies](https://www.youtube.com/watch?v=lTyAHubVF-I)  
+   LINCS Internet Measurement Reading Group - French
 
 * [Developing With Style: The Pythonic Way](https://www.youtube.com/watch?v=ygmoJz1A8Ig)  
    LINCS Python Workshop - English
