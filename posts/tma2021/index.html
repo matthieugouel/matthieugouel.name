@@ -1,71 +1,61 @@
-<!doctype html><html lang=en>
+<!doctype html><html lang=en-us>
 <head>
-<title>IP Geolocation Database Stability and Implications for Network Research :: Random Logs</title>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="IP geolocation has myriad applications. While a body of prior research has investigated the accuracy of geolocation databases, we take a first look at their stability. Using a large collection of snapshots from a popular geolocation database, we examine the longitudinal evolution of its location mappings and address coverage. Across different classes of IP addresses, we find that significant differences can exist even between two successive weekly snapshots - a previously underappreciated source of potential error. To assess the sensitivity of research results to the geo database instance, we examine a prior study that used geolocation. Using their data and methodology, we generate results for each database instance available during their measurement period, i.e., the hypothetical results had the authors used a different snapshot. We show that the median distance of addresses considered shifted over 100km from ground truth and the coverage differed by 30% - potentially impacting the conclusions of this prior study. Based on our findings, we recommend best practices when using geolocation databases for network research to encourage reproducibility and soundness.">
-<meta name=keywords content>
-<meta name=robots content="noodp">
-<link rel=canonical href=/posts/tma2021/>
-<link rel=stylesheet href=/assets/style.css>
-<link rel=stylesheet href=/assets/blue.css>
-<link rel=apple-touch-icon href=/img/apple-touch-icon-192x192.png>
+<title>IP Geolocation Database Stability and Implications for Network Research // Matthieu Gouel</title>
 <link rel="shortcut icon" href=/favicon.ico>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.91.2">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="Matthieu Gouel">
+<meta name=description content="IP geolocation has myriad applications. While a body of prior research has investigated the accuracy of geolocation databases, we take a first look at their stability. Using a large collection of snapshots from a popular geolocation database, we examine the longitudinal evolution of its location mappings and address coverage. Across different classes of IP addresses, we find that significant differences can exist even between two successive weekly snapshots - a previously underappreciated source of potential error. To assess the sensitivity of research results to the geo database instance, we examine a prior study that used geolocation. Using their data and methodology, we generate results for each database instance available during their measurement period, i.e., the hypothetical results had the authors used a different snapshot. We show that the median distance of addresses considered shifted over 100km from ground truth and the coverage differed by 30% - potentially impacting the conclusions of this prior study. Based on our findings, we recommend best practices when using geolocation databases for network research to encourage reproducibility and soundness.">
+<link rel=stylesheet href=https://randomlogs.com/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css>
 <meta name=twitter:card content="summary">
-<meta name=twitter:site content="matthieugouel">
-<meta name=twitter:creator content="Matthieu Gouel, Kevin Vermeulen, Olivier Fourmaux, Timur Friedman, Robert Beverly">
-<meta property="og:locale" content="en">
-<meta property="og:type" content="article">
+<meta name=twitter:title content="IP Geolocation Database Stability and Implications for Network Research">
+<meta name=twitter:description content="IP geolocation has myriad applications. While a body of prior research has investigated the accuracy of geolocation databases, we take a first look at their stability. Using a large collection of snapshots from a popular geolocation database, we examine the longitudinal evolution of its location mappings and address coverage. Across different classes of IP addresses, we find that significant differences can exist even between two successive weekly snapshots - a previously underappreciated source of potential error. To assess the sensitivity of research results to the geo database instance, we examine a prior study that used geolocation. Using their data and methodology, we generate results for each database instance available during their measurement period, i.e., the hypothetical results had the authors used a different snapshot. We show that the median distance of addresses considered shifted over 100km from ground truth and the coverage differed by 30% - potentially impacting the conclusions of this prior study. Based on our findings, we recommend best practices when using geolocation databases for network research to encourage reproducibility and soundness.">
 <meta property="og:title" content="IP Geolocation Database Stability and Implications for Network Research">
 <meta property="og:description" content="IP geolocation has myriad applications. While a body of prior research has investigated the accuracy of geolocation databases, we take a first look at their stability. Using a large collection of snapshots from a popular geolocation database, we examine the longitudinal evolution of its location mappings and address coverage. Across different classes of IP addresses, we find that significant differences can exist even between two successive weekly snapshots - a previously underappreciated source of potential error. To assess the sensitivity of research results to the geo database instance, we examine a prior study that used geolocation. Using their data and methodology, we generate results for each database instance available during their measurement period, i.e., the hypothetical results had the authors used a different snapshot. We show that the median distance of addresses considered shifted over 100km from ground truth and the coverage differed by 30% - potentially impacting the conclusions of this prior study. Based on our findings, we recommend best practices when using geolocation databases for network research to encourage reproducibility and soundness.">
-<meta property="og:url" content="/posts/tma2021/">
-<meta property="og:site_name" content="Random Logs">
-<meta property="og:image" content="/img/TMA2021_cover.png">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1024">
-<meta property="article:published_time" content="2021-09-14 00:00:00 +0000 UTC">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://randomlogs.com/posts/tma2021/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-09-14T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-09-14T00:00:00+00:00">
 </head>
-<body class=blue>
-<div class="container center headings--one-size">
-<header class=header>
-<div class=header__inner>
-<div class=header__logo>
-<a href=/>
-<div class=logo>
-Random Logs
-</div>
+<body>
+<header class=app-header>
+<a href=https://randomlogs.com><img class=app-header-avatar src=/avatar.jpg alt="Matthieu Gouel"></a>
+<h1>Matthieu Gouel</h1>
+<nav class=app-header-menu>
+<a class=app-header-menu-item href=/>Home</a>
+-
+<a class=app-header-menu-item href=/tags/>Tags</a>
+-
+<a class=app-header-menu-item href=/about/>About</a>
+</nav>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<div class=app-header-social>
+<a href=https://github.com/matthieugouel target=_blank rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github"><title>Github</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg>
+</a>
+<a href=https://twitter.com/matthieugouel target=_blank rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
 </a>
 </div>
-<div class=menu-trigger>menu</div>
-</div>
-<nav class=menu>
-<ul class="menu__inner menu__inner--desktop">
-<li><a href=/about>About</a></li>
-<li><a href=/posts>Posts</a></li>
-</ul>
-<ul class="menu__inner menu__inner--mobile">
-<li><a href=/about>About</a></li>
-<li><a href=/posts>Posts</a></li>
-</ul>
-</nav>
 </header>
-<div class=content>
-<div class=post>
-<h1 class=post-title>
-<a href=/posts/tma2021/>IP Geolocation Database Stability and Implications for Network Research</a></h1>
+<main class=app-container>
+<article class=post>
+<header class=post-header>
+<h1 class=post-title>IP Geolocation Database Stability and Implications for Network Research</h1>
 <div class=post-meta>
-<span class=post-date>
-2021-09-14
-</span>
-<span class=post-author>:: Matthieu Gouel, Kevin Vermeulen, Olivier Fourmaux, Timur Friedman, Robert Beverly</span>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+Sep 14, 2021
 </div>
-<span class=post-tags>
-#<a href=/tags/research/>research</a>&nbsp;
-#<a href=/tags/paper/>paper</a>&nbsp;
-#<a href=/tags/tma2021/>tma2021</a>&nbsp;
-</span>
-<img src=/img/TMA2021_cover.png class=post-cover alt="IP Geolocation Database Stability and Implications for Network Research" title="Cover Image">
-<div class=post-content><div>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock"><title>clock</title><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+2 min read
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+<a class=tag href=https://randomlogs.com/tags/research/>research</a>
+<a class=tag href=https://randomlogs.com/tags/paper/>paper</a>
+<a class=tag href=https://randomlogs.com/tags/tma2021/>tma2021</a>
+</div>
+</div>
+</header>
+<div class=post-content>
 <p>IP geolocation has myriad applications. While a body of prior research has investigated the accuracy of geolocation databases, we take a first look at their stability. Using a large collection of snapshots from a popular geolocation database, we examine the longitudinal evolution of its location mappings and address coverage. Across different classes of IP addresses, we find that significant differences can exist even between two successive weekly snapshots - a previously underappreciated source of potential error. To assess the sensitivity of research results to the geo database instance, we examine a prior study that used geolocation. Using their data and methodology, we generate results for each database instance available during their measurement period, i.e., the hypothetical results had the authors used a different snapshot. We show that the median distance of addresses considered shifted over 100km from ground truth and the coverage differed by 30% - potentially impacting the conclusions of this prior study. Based on our findings, we recommend best practices when using geolocation databases for network research to encourage reproducibility and soundness.</p>
 <p>Paper in Open Access: <a href=https://dl.ifip.org/db/conf/tma/tma2021/tma2021-paper2.pdf>https://dl.ifip.org/db/conf/tma/tma2021/tma2021-paper2.pdf</a></p>
 <div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
@@ -79,19 +69,10 @@ Random Logs
  year = 2021,
 }
 </code></pre><p>Check out our technical report: <a href=https://arxiv.org/abs/2107.03988>https://arxiv.org/abs/2107.03988</a></p>
-</div></div>
 </div>
+<div class=post-footer>
 </div>
-<footer class=footer>
-<div class=footer__inner>
-<div class="copyright copyright--user">
-<span>Creative Commons BY-SA 4.0 License</span>
-<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span>
-</div>
-</div>
-</footer>
-<script src=/assets/main.js></script>
-<script src=/assets/prism.js></script>
-</div>
+</article>
+</main>
 </body>
 </html>
