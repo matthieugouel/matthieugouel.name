@@ -6,4 +6,4 @@ Personnal Website [Random Logs](https://randomlogs.com).
 
 ## Acknoledgements
 
-Made with [Hugo](https://gohugo.io) with the theme [m10c](https://github.com/vaga/hugo-theme-m10c) (created by [Fabien](https://github.com/vaga)).
+Made with [Hugo](https://gohugo.io) with a fork of the theme [m10c](https://github.com/matthieugouel/hugo-theme-m10c).
