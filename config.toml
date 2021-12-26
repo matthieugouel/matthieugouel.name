@@ -23,7 +23,7 @@ enableEmoji = true
 
 [params]
   author = "Matthieu Gouel"
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  description = "PhD Student in Computer Science and Software Engineer"
   menu_item_separator = " - "
   [[params.social]]
     icon = "github"
@@ -34,10 +34,9 @@ enableEmoji = true
     name = "Twitter"
     url = "https://twitter.com/matthieugouel"
 
-  # Default theme
   [params.style]
    darkestColor = "#242930"
    darkColor = "#353b43"
    lightColor = "#afbac4"
    lightestColor = "#ffffff"
-   primaryColor = "#97cef4"
+   primaryColor = "#57cc8a"
