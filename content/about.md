@@ -12,11 +12,11 @@ Check out my [GitHub](https://github.com/matthieugouel), [Twitter](https://twitt
 
 * [IP Geolocation Database Stability and Implications for Network Research]({{< ref "/posts/20210914TMA" >}})  
    **Matthieu Gouel**, Kevin Vermeulen, Olivier Fourmaux, Timur Friedman, Robert Beverly  
-   [TMA2021](https://tma.ifip.org)
+   [TMA 2021](https://tma.ifip.org)
 
 * [Alias Resolution Based on ICMP Rate Limiting]({{< ref "/posts/20200201PAM" >}})  
    Kevin Vermeulen, Burim Ljuma, Vamsi Addanki, **Matthieu Gouel**, Olivier Fourmaux, Timur Friedman, Reza Rejaie  
-   [PAM2020](https://pam2020.cs.uoregon.edu)
+   [PAM 2020](https://pam2020.cs.uoregon.edu)
 
 
 ## Talks
