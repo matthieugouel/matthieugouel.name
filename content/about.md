@@ -4,7 +4,7 @@ I currently work in the [NPA](https://www.lip6.fr/recherche/team.php?acronyme=NP
 
 Before, I worked for the [French Ministry of Armed Forces](https://www.defense.gouv.fr) as a Software Engineer and for the [Société Générale](https://particuliers.societegenerale.fr) as a DevOps Engineer.
 
-Check out my [GitHub](https://github.com/matthieugouel) and [LinkedIn](https://www.linkedin.com/in/matthieugouel) profiles.
+Check out my [GitHub](https://github.com/matthieugouel), [Twitter](https://twitter.com/matthieugouel) and [LinkedIn](https://www.linkedin.com/in/matthieugouel) profiles.
 
 ## Publications
 
