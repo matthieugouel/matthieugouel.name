@@ -1,7 +1,7 @@
 baseURL = "https://randomlogs.com"
 title = "Matthieu Gouel"
 theme = "m10c"
-paginate = 8
+paginate = 5
 enableEmoji = true
 
 [menu]
