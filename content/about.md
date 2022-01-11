@@ -10,7 +10,7 @@ Before, I worked for the [French Ministry of Armed Forces](https://www.defense.g
 
 Check out my [GitHub](https://github.com/matthieugouel) and [Twitter](https://twitter.com/matthieugouel).
 
-[**Resume**](/pdf/resume.pdf)
+📚 [**Resume**](/pdf/resume.pdf)
 
 ## Publications
 
