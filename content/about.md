@@ -2,7 +2,7 @@
 title = "About"
 +++
 
-Hello! :wave: My name is Matthieu Gouel. I'm a Ph.D student in computer science and a Software Engineer based in Paris, France.
+Hello! 👋 My name is Matthieu Gouel. I'm a Ph.D student in computer science and a Software Engineer based in Paris, France.
 
 I currently work in the [NPA](https://www.lip6.fr/recherche/team.php?acronyme=NPA) team of the [LIP6](https://www.lip6.fr) laboratory at [Sorbonne Université](https://www.sorbonne-universite.fr), and I’m affiliated with the [LINCS](https://www.lincs.fr) laboratory. I’m part of the [Dioptra](https://dioptra.io/about) group led by [Timur Friedman](https://orcid.org/0000-0002-1653-3552) and [Olivier Fourmaux](https://orcid.org/0000-0002-6885-9378).
 
