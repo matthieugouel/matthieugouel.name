@@ -30,10 +30,6 @@ enableEmoji = true
     icon = "github"
     name = "Github"
     url = "https://github.com/matthieugouel"
-  [[params.social]]
-    icon = "icon-twitter"
-    name = "Twitter"
-    url = "https://twitter.com/matthieugouel"
 
   [params.style]
    darkestColor = "#242930"
