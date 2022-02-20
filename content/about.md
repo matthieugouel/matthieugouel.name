@@ -25,6 +25,9 @@ Before, I worked for the [French Ministry of Armed Forces](https://www.defense.g
 
 ## Talks
 
+* [Object-Oriented Programming in Python](https://www.youtube.com/watch?v=xw_3erIudaM&t=2s)  
+   LINCS Python Workshop - French
+
 * [MPLS in Internet Topologies](https://www.youtube.com/watch?v=lTyAHubVF-I)  
    LINCS Internet Measurement Reading Group - French
 
