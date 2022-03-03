@@ -11,14 +11,14 @@ enableEmoji = true
     url = "/"
     weight = 1
   [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
-  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
     weight = 3
 
 [params]
@@ -27,11 +27,15 @@ enableEmoji = true
   description = "PhD Student in Computer Science and Software Engineer"
   menu_item_separator = " - "
   [[params.social]]
+    icon = "mail"
+    name = "Mail"
+    url = "mailto:matthieu.gouel@lip6.fr"
+  [[params.social]]
     icon = "github"
     name = "Github"
     url = "https://github.com/matthieugouel"
   [[params.social]]
-    icon = "scholar"
+    icon = "book"
     name = "Scholar"
     url = "https://scholar.google.fr/citations?user=Ltb5srIAAAAJ&hl=fr&oi=ao"
 

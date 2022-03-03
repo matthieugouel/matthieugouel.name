@@ -23,19 +23,19 @@ Before, I worked for the [French Ministry of Armed Forces](https://www.defense.g
    [PAM 2020](https://pam2020.cs.uoregon.edu)
 
 
-## Talks
+## LINCS Talks
 
 * [Object-Oriented Programming in Python](https://www.youtube.com/watch?v=xw_3erIudaM&t=2s)  
-   LINCS Python Workshop - French
+   Python Workshop - French
 
 * [MPLS in Internet Topologies](https://www.youtube.com/watch?v=lTyAHubVF-I)  
-   LINCS Internet Measurement Reading Group - French
+   Internet Measurement Reading Group - French
 
 * [Developing With Style: The Pythonic Way](https://www.youtube.com/watch?v=ygmoJz1A8Ig)  
-   LINCS Python Workshop - English
+   Python Workshop - English
 
 * [Classification of Load-Balancing on the Internet](https://www.youtube.com/watch?v=tbEpqWaK75U&t=2s)  
-   LINCS Internet Measurement Reading Group - French
+   Internet Measurement Reading Group - French
 
 * [Takeaways of building a research-oriented system](https://www.youtube.com/watch?v=ZdIgTk3vMOQ)  
-   LINCS Python Workshop - French
+   Python Workshop - French
