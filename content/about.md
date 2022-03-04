@@ -16,7 +16,7 @@ Before, I worked for the [French Ministry of Armed Forces](https://www.defense.g
 
 * [Zeph & Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing]({{< ref "/posts/20220301CCR" >}})  
    **Matthieu Gouel**, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman  
-   [SIGCOMM CCR 2022](https://ccronline.sigcomm.org)
+   [ACM SIGCOMM CCR 2022](https://ccronline.sigcomm.org)
 
 * [IP Geolocation Database Stability and Implications for Network Research]({{< ref "/posts/20210914TMA" >}})  
    **Matthieu Gouel**, Kevin Vermeulen, Olivier Fourmaux, Timur Friedman, Robert Beverly  
