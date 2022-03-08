@@ -2,7 +2,7 @@
 <head>
 <title>Zeph & Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing // Matthieu Gouel</title><link rel="shortcut icon" href=/favicon.ico>
 <meta charset=utf-8>
-<meta name=generator content="Hugo 0.93.1">
+<meta name=generator content="Hugo 0.93.2">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=author content="Matthieu Gouel">
 <meta name=description content>
@@ -51,7 +51,8 @@ Mar 1, 2022
 </div></div></header><div class=post-content>
 <p><strong>Matthieu Gouel</strong>, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman</p><p><img src=/img/20220301CCR.png alt=20220301CCR>
 <em>Representation of the IP-level graph of the internet measured with Iris.</em></p><p>We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our fault tolerant system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. Iris is built around third party free open source software and modern containerization technology, thereby presenting a new model for assembling a resilient and maintainable internet measurement architecture. We show that carefully choosing the destinations to probe from which vantage point matters to optimize topology discovery and that a system can learn which assignment will maximize the overall discovery based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 2.4M nodes and 10M links in a cycle of 6 hours, when deployed on 5 Iris agents. This is at least 2 times more nodes and 5 times more links than other production systems for the same number of prefixes probed.</p><hr>
-<p>Paper in Open Access: <a href=https://hal.archives-ouvertes.fr/hal-03597580/document>https://hal.archives-ouvertes.fr/hal-03597580/document</a><br>
+<p>Paper on ACM library: <a href=https://dl.acm.org/doi/10.1145/3523230.3523232>https://dl.acm.org/doi/10.1145/3523230.3523232</a>
+Paper in Open Access: <a href=https://hal.archives-ouvertes.fr/hal-03597580/document>https://hal.archives-ouvertes.fr/hal-03597580/document</a><br>
 Iris website: <a href=https://iris.dioptra.io/#/>https://iris.dioptra.io/#/</a></p><hr>
 <p>Source code of Iris: <a href=https://github.com/dioptra-io/iris>https://github.com/dioptra-io/iris</a><br>
 Source code of Zeph: <a href=https://github.com/dioptra-io/zeph>https://github.com/dioptra-io/zeph</a></p><p>Source code of the evaluation section of the paper: <a href=https://github.com/dioptra-io/zeph-evaluation>https://github.com/dioptra-io/zeph-evaluation</a></p><pre tabindex=0><code>@article{10.1145/3523230.3523232,
