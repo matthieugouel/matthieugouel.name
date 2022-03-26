@@ -29,6 +29,9 @@ Before, I worked for the [French Ministry of Armed Forces](https://www.defense.g
 
 ## LINCS Talks
 
+* [Application of stream graphs theory on internet topology](https://www.youtube.com/watch?v=tmlX9nufN-8&t=4s)  
+   Network Theory Working group - French
+
 * [Object-Oriented Programming in Python](https://www.youtube.com/watch?v=xw_3erIudaM&t=2s)  
    Python Workshop - French
 
