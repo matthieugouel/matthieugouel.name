@@ -29,7 +29,7 @@ enableEmoji = true
   [[params.social]]
     icon = "mail"
     name = "Mail"
-    url = "mailto:matthieu.gouel@lip6.fr"
+    url = "mailto:matthieu.gouel@protonmail.com"
   [[params.social]]
     icon = "github"
     name = "Github"
