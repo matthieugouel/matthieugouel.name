@@ -24,7 +24,7 @@ enableEmoji = true
 [params]
   author = "Matthieu Gouel"
   avatar = "avatar.png"
-  description = "PhD Student in Computer Science and Software Engineer"
+  description = "PhD Student in Computer Science"
   menu_item_separator = " - "
   [[params.social]]
     icon = "mail"
