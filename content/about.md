@@ -33,7 +33,7 @@ Previously, I held positions as a Software Engineer at the [French Ministry for 
 
 * [Zeph & Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing]({{< ref "/posts/20220301CCR" >}})  
    **Matthieu Gouel**, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman  
-   [ACM SIGCOMM CCR 2022](https://ccronline.sigcomm.org)
+   [SIGCOMM CCR 2022](https://ccronline.sigcomm.org)
 
 * [IP Geolocation Database Stability and Implications for Network Research]({{< ref "/posts/20210914TMA" >}})  
    **Matthieu Gouel**, Kevin Vermeulen, Olivier Fourmaux, Timur Friedman, Robert Beverly  
