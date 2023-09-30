@@ -2,17 +2,30 @@
 title = "About"
 +++
 
-Hello! 👋 My name is Matthieu Gouel. I'm a Ph.D student in computer science based in Paris, France.
+Hello! 👋 I'm currently a Reseach Fellow at Cloudflare, France. 
 
-I currently work in the [NPA](https://www.lip6.fr/recherche/team.php?acronyme=NPA) team of the [LIP6](https://www.lip6.fr) laboratory at [Sorbonne Université](https://www.sorbonne-universite.fr), and I’m affiliated with the [LINCS](https://www.lincs.fr) laboratory. I’m part of the [Dioptra](https://dioptra.io/about) group led by [Timur Friedman](https://orcid.org/0000-0002-1653-3552) and [Olivier Fourmaux](https://orcid.org/0000-0002-6885-9378).
+I recently completed my PhD at Sorbonne Université in Paris, France. 
+My doctoral work is centered on advancing our understanding of the internet infrastructure, achieved through the application of internet-wide high-speed measurements and extensive large-scale analysis. Broadly speaking, my research contributes to addressing challenges across diverse research domains, including network topology and performance, network security, and traffic engineering.
 
-Before, I worked for the [French Ministry of Armed Forces](https://www.defense.gouv.fr) as a Software Engineer and for the [Société Générale](https://particuliers.societegenerale.fr) as a DevOps Engineer.
+Previously, I held positions as a Software Engineer at the [French Ministry for the Armed Forces](https://www.defense.gouv.fr) and as a DevOps Engineer at [Société Générale](https://www.societegenerale.com/en) .
 
 ✨ [**GitHub**](https://github.com/matthieugouel) 📚 [**Resume**](https://nbviewer.org/github/matthieugouel/resume/blob/main/main.pdf)
 
 ## Publications
 
 [Scholar](https://scholar.google.fr/citations?user=Ltb5srIAAAAJ&hl=fr&oi=sra) | [ORCID](https://orcid.org/0000-0003-0579-7023) | [HAL](https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=matthieu-gouel&sort=producedDate_tdate+desc)
+
+* [Replication: Towards a Publicly Available Internet scale IP Geolocation Dataset](https://hal.science/hal-04215113/document)  
+   Omar Darwich, Hugo Rimlinger, **Matthieu Gouel**, Kevin Vermeulen    
+   [ACM IMC 2023](https://conferences.sigcomm.org/imc/2023/)
+
+* [Poster: Towards a Publicly Available Framework to Process Traceroutes with MetaTrace](https://hal.science/hal-04218315v1/document)  
+   **Matthieu Gouel**, Omar Darwich, Maxime Mouchet, Kevin Vermeulen  
+   [ACM IMC 2023](https://conferences.sigcomm.org/imc/2023/)
+
+* [Vers des mesures haute fréquence d'internet plus éthiques](https://hal.science/hal-04090683v1/document)  
+   **Matthieu Gouel**, Kevin Vermeulen, Hugo Rimlinger, Olivier Fourmaux, Timur Friedman  
+   [CORES 2023](https://coresalgotel2023.i3s.univ-cotedazur.fr/)
 
 * [Zeph & Iris cartographient l’internet]({{< ref "/posts/20220301CCR" >}})  
    **Matthieu Gouel**, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman  
@@ -24,7 +37,7 @@ Before, I worked for the [French Ministry of Armed Forces](https://www.defense.g
 
 * [IP Geolocation Database Stability and Implications for Network Research]({{< ref "/posts/20210914TMA" >}})  
    **Matthieu Gouel**, Kevin Vermeulen, Olivier Fourmaux, Timur Friedman, Robert Beverly  
-   [IFIP TMA 2021](https://tma.ifip.org)
+   [TMA 2021](https://tma.ifip.org)
 
 * [Alias Resolution Based on ICMP Rate Limiting]({{< ref "/posts/20200201PAM" >}})  
    Kevin Vermeulen, Burim Ljuma, Vamsi Addanki, **Matthieu Gouel**, Olivier Fourmaux, Timur Friedman, Reza Rejaie  
