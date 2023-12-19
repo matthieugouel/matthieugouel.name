@@ -1,8 +1,8 @@
-# Random Logs
+# matthieugouel.name
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-Personnal Website [Random Logs](https://randomlogs.com).
+Personnal Website [matthieugouel.name](https://matthieugouel.name).
 
 ## Acknowledgements
 
