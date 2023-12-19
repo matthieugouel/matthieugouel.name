@@ -9,17 +9,17 @@ My doctoral work is centered on advancing our understanding of the internet infr
 
 Previously, I held positions as a Software Engineer at the [French Ministry for the Armed Forces](https://www.defense.gouv.fr) and as a DevOps Engineer at [Société Générale](https://www.societegenerale.com/en).
 
-✨ [**GitHub**](https://github.com/matthieugouel) 📚 [**Resume**](https://nbviewer.org/github/matthieugouel/resume/blob/main/main.pdf)
+✨ [**GitHub**](https://github.com/matthieugouel) 📚 [**Resume**](https://github.com/matthieugouel/resume/blob/main/main.pdf)
 
 ## Publications
 
 [Scholar](https://scholar.google.fr/citations?user=Ltb5srIAAAAJ&hl=fr&oi=sra) | [ORCID](https://orcid.org/0000-0003-0579-7023) | [HAL](https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=matthieu-gouel&sort=producedDate_tdate+desc)
 
-* [Replication: Towards a Publicly Available Internet scale IP Geolocation Dataset](https://hal.science/hal-04215113/document)  
+* [Replication: Towards a Publicly Available Internet scale IP Geolocation Dataset]({{< ref "/posts/20231024IMCreplication" >}})  
    Omar Darwich, Hugo Rimlinger, **Matthieu Gouel**, Kevin Vermeulen    
    [ACM IMC 2023](https://conferences.sigcomm.org/imc/2023/)
 
-* [Poster: Towards a Publicly Available Framework to Process Traceroutes with MetaTrace](https://hal.science/hal-04218315v1/document)  
+* [Poster: Towards a Publicly Available Framework to Process Traceroutes with MetaTrace]({{< ref "/posts/20231024IMCposter" >}})  
    **Matthieu Gouel**, Omar Darwich, Maxime Mouchet, Kevin Vermeulen  
    [ACM IMC 2023](https://conferences.sigcomm.org/imc/2023/)
 
