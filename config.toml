@@ -1,25 +1,20 @@
 baseURL = "https://matthieugouel.name"
 title = "Matthieu Gouel"
 theme = "m10c"
-paginate = 5
+paginate = 10
 enableEmoji = true
 
 [menu]
 [[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
-[[menu.main]]
 identifier = "about"
-name = "About"
+name = "About me"
 url = "/about/"
 weight = 2
 
 [params]
 author = "Matthieu Gouel"
 avatar = "avatar.png"
-description = "Research Fellow, Cloudflare"
+description = "Systems Engineer @Cloudflare"
 menu_item_separator = " - "
 [[params.social]]
 icon = "mail"
@@ -35,8 +30,8 @@ name = "Scholar"
 url = "https://scholar.google.fr/citations?user=Ltb5srIAAAAJ&hl=fr&oi=ao"
 
 [params.style]
-darkestColor = "#242930"
-darkColor = "#353b43"
+darkestColor = "#010408"
+darkColor = "#0D1116"
 lightColor = "#afbac4"
 lightestColor = "#ffffff"
-primaryColor = "#57cc8a"
+primaryColor = "#f6f6f6"
