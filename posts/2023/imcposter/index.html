@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Towards a Publicly Available Framework to Process Traceroutes with MetaTrace // Matthieu Gouel</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Matthieu Gouel" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c509949d9bb110a4ce06d3acdbbcf07b316806fc14f3da587d3e61638adb58c.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Towards a Publicly Available Framework to Process Traceroutes with MetaTrace">
+  <meta name="twitter:description" content="Matthieu Gouel, Omar Darwich, Maxime Mouchet, Kevin Vermeulen
+The objective of this research is to contribute towards the development of an open-source framework for processing large-scale traceroute datasets. By providing such a framework, we aim to benefit the community by saving time in everyday traceroute analysis and enabling the design of new scalable reactive measurements, where prior traceroute measurements are leveraged to make informed decisions for future ones. It is important to clarify that our goal is not to surpass proprietary solutions like BigQuery, which are utilized by CDNs for processing billions of traceroutes. These proprietary solutions are not freely accessible to the public, whereas our focus is on creating an open and freely available framework for the wider community. Our contributions include (1) sharing the ideas and thinking process behind building MetaTrace, which efficiently utilizes ClickHouse features for traceroute processing; and (2) providing an open-source implementation of MetaTrace.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/2023/imcposter/">
+  <meta property="og:site_name" content="Matthieu Gouel">
+  <meta property="og:title" content="Towards a Publicly Available Framework to Process Traceroutes with MetaTrace">
+  <meta property="og:description" content="Matthieu Gouel, Omar Darwich, Maxime Mouchet, Kevin Vermeulen
+The objective of this research is to contribute towards the development of an open-source framework for processing large-scale traceroute datasets. By providing such a framework, we aim to benefit the community by saving time in everyday traceroute analysis and enabling the design of new scalable reactive measurements, where prior traceroute measurements are leveraged to make informed decisions for future ones. It is important to clarify that our goal is not to surpass proprietary solutions like BigQuery, which are utilized by CDNs for processing billions of traceroutes. These proprietary solutions are not freely accessible to the public, whereas our focus is on creating an open and freely available framework for the wider community. Our contributions include (1) sharing the ideas and thinking process behind building MetaTrace, which efficiently utilizes ClickHouse features for traceroute processing; and (2) providing an open-source implementation of MetaTrace.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-10-24T00:00:00+00:00">
+    <meta property="article:tag" content="Research">
+    <meta property="article:tag" content="Poster">
+    <meta property="article:tag" content="Imc2023">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      
+      <a class="app-header-title" href="/">Matthieu Gouel</a>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/about/">About me</a>
+      </nav>
+      <p>Systems Engineer @Cloudflare</p>
+      <div class="app-header-social">
+        
+          <a href="mailto:matthieu.gouel@protonmail.com" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>mail</title><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        
+          <a href="https://github.com/matthieugouel" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>github</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+        
+          <a href="https://scholar.google.fr/citations?user=Ltb5srIAAAAJ&amp;hl=fr&amp;oi=ao" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>book</title><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Towards a Publicly Available Framework to Process Traceroutes with MetaTrace</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Oct 24, 2023
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          2 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/research/">Research</a>
+              <a class="tag" href="/tags/poster/">Poster</a>
+              <a class="tag" href="/tags/imc2023/">Imc2023</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><strong>Matthieu Gouel</strong>, Omar Darwich, Maxime Mouchet, Kevin Vermeulen</p>
+<p>The objective of this research is to contribute towards the development of an open-source framework for processing large-scale traceroute datasets. By providing such a framework, we aim to benefit the community by saving time in everyday traceroute analysis and enabling the design of new scalable reactive measurements, where prior traceroute measurements are leveraged to make informed decisions for future ones.
+It is important to clarify that our goal is not to surpass proprietary solutions like BigQuery, which are utilized by CDNs for processing billions of traceroutes. These proprietary solutions are not freely accessible to the public, whereas our focus is on creating an open and freely available framework for the wider community.
+Our contributions include (1) sharing the ideas and thinking process behind building MetaTrace, which efficiently utilizes ClickHouse features for traceroute processing; and (2) providing an open-source implementation of MetaTrace.</p>
+<p>We evaluated MetaTrace using two types of queries: predicate queries for filtering traceroutes based on conditions, and aggregate queries for computing metrics on traceroutes. Our results show that MetaTrace is significantly faster compared to alternative solutions.
+For predicate queries, it outperforms a multiprocessed Rust solution by a factor of 552 and is 3.4 times faster than ClickHouse without MetaTrace optimizations. For aggregate queries, MetaTrace processes 202 million traceroutes in 11 seconds, with its performance scaling linearly with traceroute volume. Notably, on a single server, MetaTrace can perform a predicate query on a 6-year dataset of 6 billion traceroutes in just 240 seconds.
+Furthermore, MetaTrace is resource-efficient, making it accessible for research groups with limited resources to conduct Internetscale traceroute studies.</p>
+<hr>
+<p>Paper on ACM library: <a href="https://dl.acm.org/doi/abs/10.1145/3618257.3625001">https://dl.acm.org/doi/abs/10.1145/3618257.3625001</a><br>
+Paper in Open Access: <a href="https://hal.science/hal-04218315v1/document">https://hal.science/hal-04218315v1/document</a></p>
+<hr>
+<p>Source code of MetaTrace: <a href="https://github.com/dioptra-io/metatrace">https://github.com/dioptra-io/metatrace</a></p>
+<pre tabindex="0"><code>@inproceedings{gouel2023poster,
+  title={Poster: Towards a Publicly Available Framework to Process Traceroutes with MetaTrace},
+  author={Gouel, Matthieu and Darwich, Omar and Mouchet, Maxime and Vermeulen, Kevin},
+  booktitle={ACM Internet Measurement Conference (IMC 2023)},
+  year={2023}
+}
+</code></pre>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
