@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Zeph &amp; Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing // Matthieu Gouel</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Matthieu Gouel" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c509949d9bb110a4ce06d3acdbbcf07b316806fc14f3da587d3e61638adb58c.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Zeph & Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing">
+  <meta name="twitter:description" content="Matthieu Gouel, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman
+Representation of the IP-level graph of the internet measured with Iris (credits to Maxime Mouchet).
+We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our open-source system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. We show that carefully choosing which destination prefixes to probe from which vantage point matters for optimizing topology discovery and that a system can learn to improve its assignments based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 3.3M nodes and 19.8M links in a cycle of 15 hours, when deployed on 5 Iris agents. This is 3 times more nodes and 10 times more links than the existing state-of-the-art production system for the same number of prefixes probed.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/2022/ccr/">
+  <meta property="og:site_name" content="Matthieu Gouel">
+  <meta property="og:title" content="Zeph & Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing">
+  <meta property="og:description" content="Matthieu Gouel, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman
+Representation of the IP-level graph of the internet measured with Iris (credits to Maxime Mouchet).
+We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our open-source system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. We show that carefully choosing which destination prefixes to probe from which vantage point matters for optimizing topology discovery and that a system can learn to improve its assignments based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 3.3M nodes and 19.8M links in a cycle of 15 hours, when deployed on 5 Iris agents. This is 3 times more nodes and 10 times more links than the existing state-of-the-art production system for the same number of prefixes probed.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-03-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-03-01T00:00:00+00:00">
+    <meta property="article:tag" content="Research">
+    <meta property="article:tag" content="Paper">
+    <meta property="article:tag" content="Ccr2022">
+    <meta property="article:tag" content="Cores2022">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      
+      <a class="app-header-title" href="/">Matthieu Gouel</a>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/about/">About me</a>
+      </nav>
+      <p>Systems Engineer @Cloudflare</p>
+      <div class="app-header-social">
+        
+          <a href="mailto:matthieu.gouel@protonmail.com" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>mail</title><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        
+          <a href="https://github.com/matthieugouel" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>github</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+        
+          <a href="https://scholar.google.fr/citations?user=Ltb5srIAAAAJ&amp;hl=fr&amp;oi=ao" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>book</title><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Zeph &amp; Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Mar 1, 2022
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          3 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/research/">Research</a>
+              <a class="tag" href="/tags/paper/">Paper</a>
+              <a class="tag" href="/tags/ccr2022/">Ccr2022</a>
+              <a class="tag" href="/tags/cores2022/">Cores2022</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><strong>Matthieu Gouel</strong>, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman</p>
+<p><img src="/img/20220301CCR.png" alt="20220301CCR"><br>
+<em>Representation of the IP-level graph of the internet measured with Iris (credits to <a href="https://www.maxmouchet.com">Maxime Mouchet</a>).</em></p>
+<p>We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our open-source system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. We show that carefully choosing which destination prefixes to probe from which vantage point matters for optimizing topology discovery and that a system can learn to improve its assignments based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 3.3M nodes and 19.8M links in a cycle of 15 hours, when deployed on 5 Iris agents. This is 3 times more nodes and 10 times more links than the existing state-of-the-art production system for the same number of prefixes probed.</p>
+<hr>
+<p>Paper on ACM library: <a href="https://dl.acm.org/doi/10.1145/3523230.3523232">https://dl.acm.org/doi/10.1145/3523230.3523232</a><br>
+Paper in Open Access: <a href="https://hal.archives-ouvertes.fr/hal-03597580/document">https://hal.archives-ouvertes.fr/hal-03597580/document</a><br>
+Iris website: <a href="https://iris.dioptra.io/#/">https://iris.dioptra.io/#/</a></p>
+<p>French adaptation presented at CoRes 2022: <a href="https://hal.archives-ouvertes.fr/hal-03656974/document">https://hal.archives-ouvertes.fr/hal-03656974/document</a></p>
+<hr>
+<p>Source code of Iris: <a href="https://github.com/dioptra-io/iris">https://github.com/dioptra-io/iris</a><br>
+Source code of Zeph: <a href="https://github.com/dioptra-io/zeph">https://github.com/dioptra-io/zeph</a></p>
+<p>Source code of the evaluation section of the paper: <a href="https://github.com/dioptra-io/zeph-evaluation">https://github.com/dioptra-io/zeph-evaluation</a></p>
+<pre tabindex="0"><code>@article{10.1145/3523230.3523232,
+author = {Gouel, Matthieu and Vermeulen, Kevin and Mouchet, Maxime and Rohrer, Justin P. and Fourmaux, Olivier and Friedman, Timur},
+title = {Zeph &amp;amp; Iris Map the Internet: A Resilient Reinforcement Learning Approach to Distributed IP Route Tracing},
+year = {2022},
+issue_date = {January 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {52},
+number = {1},
+issn = {0146-4833},
+url = {https://doi.org/10.1145/3523230.3523232},
+doi = {10.1145/3523230.3523232},
+abstract = {We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our fault tolerant system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. Iris is built around third party free open source software and modern containerization technology, thereby presenting a new model for assembling a resilient and maintainable internet measurement architecture. We show that carefully choosing the destinations to probe from which vantage point matters to optimize topology discovery and that a system can learn which assignment will maximize the overall discovery based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 2.4M nodes and 10M links in a cycle of 6 hours, when deployed on 5 Iris agents. This is at least 2 times more nodes and 5 times more links than other production systems for the same number of prefixes probed.},
+journal = {SIGCOMM Comput. Commun. Rev.},
+month = {mar},
+pages = {2–9},
+numpages = {8},
+keywords = {active internet measurements, internet topology}
+}
+</code></pre>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,8 +1,10 @@
 baseURL = "https://matthieugouel.name"
 title = "Matthieu Gouel"
 theme = "m10c"
-paginate = 10
 enableEmoji = true
+
+[pagination]
+pagerSize = 10
 
 [menu]
 [[menu.main]]

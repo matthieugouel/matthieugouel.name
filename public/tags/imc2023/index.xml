@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Imc2023 on Matthieu Gouel</title>
+    <link>http://localhost:1313/tags/imc2023/</link>
+    <description>Recent content in Imc2023 on Matthieu Gouel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/imc2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Replication: Towards a Publicly Available Internet scale IP Geolocation Dataset</title>
+      <link>http://localhost:1313/posts/2023/imcreplication/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/imcreplication/</guid>
+      <description>&lt;p&gt;Omar Darwich, Hugo Rimlinger, Milo Dreyfus, &lt;strong&gt;Matthieu Gouel&lt;/strong&gt;, Kevin Vermeulen&lt;/p&gt;&#xA;&lt;p&gt;IP geolocation is one of the most widely used forms of metadata for IP addresses, and despite almost twenty years of effort from the research community, the reality is that there is no accurate, complete, up-to-date, and explainable publicly available dataset for IP geolocation. We argue that a central reason for this state of affairs is the impressive results from prior publications, both in terms of accuracy and coverage: up to street level accuracy and locating millions of IP addresses with a few hundred vantage points in months. We believe the community would substantially benefit from a public baseline dataset and code. To encourage future research in IP geolocation, we replicate two geolocation techniques and evaluate their accuracy and coverage. We show that we can neither use the first technique to obtain the previously claimed street level accuracy, nor the second to geolocate millions of IP addresses on today’s Internet and with publicly available measurement infrastructure. In addition to this reappraisal, we re-evaluate the fundamental insights that led to these prior results, as well as provide new insights and recommendations to help the design of future geolocation techniques. All of our code and data are publicly available to support reproducibility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Towards a Publicly Available Framework to Process Traceroutes with MetaTrace</title>
+      <link>http://localhost:1313/posts/2023/imcposter/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/imcposter/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Matthieu Gouel&lt;/strong&gt;, Omar Darwich, Maxime Mouchet, Kevin Vermeulen&lt;/p&gt;&#xA;&lt;p&gt;The objective of this research is to contribute towards the development of an open-source framework for processing large-scale traceroute datasets. By providing such a framework, we aim to benefit the community by saving time in everyday traceroute analysis and enabling the design of new scalable reactive measurements, where prior traceroute measurements are leveraged to make informed decisions for future ones.&#xA;It is important to clarify that our goal is not to surpass proprietary solutions like BigQuery, which are utilized by CDNs for processing billions of traceroutes. These proprietary solutions are not freely accessible to the public, whereas our focus is on creating an open and freely available framework for the wider community.&#xA;Our contributions include (1) sharing the ideas and thinking process behind building MetaTrace, which efficiently utilizes ClickHouse features for traceroute processing; and (2) providing an open-source implementation of MetaTrace.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

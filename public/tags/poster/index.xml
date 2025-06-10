@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poster on Matthieu Gouel</title>
+    <link>http://localhost:1313/tags/poster/</link>
+    <description>Recent content in Poster on Matthieu Gouel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/poster/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Towards a Publicly Available Framework to Process Traceroutes with MetaTrace</title>
+      <link>http://localhost:1313/posts/2023/imcposter/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/imcposter/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Matthieu Gouel&lt;/strong&gt;, Omar Darwich, Maxime Mouchet, Kevin Vermeulen&lt;/p&gt;&#xA;&lt;p&gt;The objective of this research is to contribute towards the development of an open-source framework for processing large-scale traceroute datasets. By providing such a framework, we aim to benefit the community by saving time in everyday traceroute analysis and enabling the design of new scalable reactive measurements, where prior traceroute measurements are leveraged to make informed decisions for future ones.&#xA;It is important to clarify that our goal is not to surpass proprietary solutions like BigQuery, which are utilized by CDNs for processing billions of traceroutes. These proprietary solutions are not freely accessible to the public, whereas our focus is on creating an open and freely available framework for the wider community.&#xA;Our contributions include (1) sharing the ideas and thinking process behind building MetaTrace, which efficiently utilizes ClickHouse features for traceroute processing; and (2) providing an open-source implementation of MetaTrace.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

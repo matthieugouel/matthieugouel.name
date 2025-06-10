@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conext2023 on Matthieu Gouel</title>
+    <link>http://localhost:1313/tags/conext2023/</link>
+    <description>Recent content in Conext2023 on Matthieu Gouel</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 08 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/conext2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reconciling High Speed Probing with Ethical Probing</title>
+      <link>http://localhost:1313/posts/2023/conext/</link>
+      <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023/conext/</guid>
+      <description>&lt;p&gt;Hugo Rimlinger, Kevin Vermeulen, &lt;strong&gt;Matthieu Gouel&lt;/strong&gt;, Olivier Fourmaux, Timur Friedman&lt;/p&gt;&#xA;&lt;p&gt;What if tomorrow, hundreds, thousands, or even more people start sending 100,000 packets per second into the network using high speed probing? It is reasonable to think that this would not be a desirable scenario for the Internet. However, this might already be taking place, as high speed probing techniques such as ZMap and Yarrp, the high speed evolution of Ping and Traceroute, are extensively used by the network research community and beyond. If they can definitely help for improving our understanding of the Internet, very little work has been done to examine their potential negative impact, i.e., their potential harm to the Internet’s infrastructure, or their harm to the quality of measurement results. In this paper, we quantify the risks of those techniques, and provide recommendations on how to put in place high-speed ethical probing methods.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
