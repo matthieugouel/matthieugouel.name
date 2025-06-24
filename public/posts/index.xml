@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Matthieu Gouel</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 08 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nxhtdr: Internet Measurements — Open, Ethical, and For Everyone</title>
+      <link>http://localhost:1313/posts/2025/nxthdr/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025/nxthdr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://nxthdr.dev/&#34;&gt;https://nxthdr.dev/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Reconciling High Speed Probing with Ethical Probing</title>
       <link>http://localhost:1313/posts/2023/conext/</link>
@@ -17,16 +24,16 @@
     </item>
     <item>
       <title>Replication: Towards a Publicly Available Internet scale IP Geolocation Dataset</title>
-      <link>http://localhost:1313/posts/2023/imcreplication/</link>
+      <link>http://localhost:1313/posts/2023/imc-replication/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/imcreplication/</guid>
+      <guid>http://localhost:1313/posts/2023/imc-replication/</guid>
       <description>&lt;p&gt;Omar Darwich, Hugo Rimlinger, Milo Dreyfus, &lt;strong&gt;Matthieu Gouel&lt;/strong&gt;, Kevin Vermeulen&lt;/p&gt;&#xA;&lt;p&gt;IP geolocation is one of the most widely used forms of metadata for IP addresses, and despite almost twenty years of effort from the research community, the reality is that there is no accurate, complete, up-to-date, and explainable publicly available dataset for IP geolocation. We argue that a central reason for this state of affairs is the impressive results from prior publications, both in terms of accuracy and coverage: up to street level accuracy and locating millions of IP addresses with a few hundred vantage points in months. We believe the community would substantially benefit from a public baseline dataset and code. To encourage future research in IP geolocation, we replicate two geolocation techniques and evaluate their accuracy and coverage. We show that we can neither use the first technique to obtain the previously claimed street level accuracy, nor the second to geolocate millions of IP addresses on today’s Internet and with publicly available measurement infrastructure. In addition to this reappraisal, we re-evaluate the fundamental insights that led to these prior results, as well as provide new insights and recommendations to help the design of future geolocation techniques. All of our code and data are publicly available to support reproducibility.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Towards a Publicly Available Framework to Process Traceroutes with MetaTrace</title>
-      <link>http://localhost:1313/posts/2023/imcposter/</link>
+      <link>http://localhost:1313/posts/2023/imc-poster/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/imcposter/</guid>
+      <guid>http://localhost:1313/posts/2023/imc-poster/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Matthieu Gouel&lt;/strong&gt;, Omar Darwich, Maxime Mouchet, Kevin Vermeulen&lt;/p&gt;&#xA;&lt;p&gt;The objective of this research is to contribute towards the development of an open-source framework for processing large-scale traceroute datasets. By providing such a framework, we aim to benefit the community by saving time in everyday traceroute analysis and enabling the design of new scalable reactive measurements, where prior traceroute measurements are leveraged to make informed decisions for future ones.&#xA;It is important to clarify that our goal is not to surpass proprietary solutions like BigQuery, which are utilized by CDNs for processing billions of traceroutes. These proprietary solutions are not freely accessible to the public, whereas our focus is on creating an open and freely available framework for the wider community.&#xA;Our contributions include (1) sharing the ideas and thinking process behind building MetaTrace, which efficiently utilizes ClickHouse features for traceroute processing; and (2) providing an open-source implementation of MetaTrace.&lt;/p&gt;</description>
     </item>
     <item>
@@ -34,7 +41,7 @@
       <link>http://localhost:1313/posts/2022/ccr/</link>
       <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2022/ccr/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Matthieu Gouel&lt;/strong&gt;, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/20220301CCR.png&#34; alt=&#34;20220301CCR&#34;&gt;&lt;br&gt;&#xA;&lt;em&gt;Representation of the IP-level graph of the internet measured with Iris (credits to &lt;a href=&#34;https://www.maxmouchet.com&#34;&gt;Maxime Mouchet&lt;/a&gt;).&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our open-source system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. We show that carefully choosing which destination prefixes to probe from which vantage point matters for optimizing topology discovery and that a system can learn to improve its assignments based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 3.3M nodes and 19.8M links in a cycle of 15 hours, when deployed on 5 Iris agents. This is 3 times more nodes and 10 times more links than the existing state-of-the-art production system for the same number of prefixes probed.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Matthieu Gouel&lt;/strong&gt;, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/20220301CCR.png&#34; alt=&#34;20220301CCR&#34;&gt;&#xA;&lt;em&gt;Representation of the IP-level graph of the internet measured with Iris (credits to &lt;a href=&#34;https://www.maxmouchet.com&#34;&gt;Maxime Mouchet&lt;/a&gt;).&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our open-source system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. We show that carefully choosing which destination prefixes to probe from which vantage point matters for optimizing topology discovery and that a system can learn to improve its assignments based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 3.3M nodes and 19.8M links in a cycle of 15 hours, when deployed on 5 Iris agents. This is 3 times more nodes and 10 times more links than the existing state-of-the-art production system for the same number of prefixes probed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>IP Geolocation Database Stability and Implications for Network Research</title>

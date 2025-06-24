@@ -19,7 +19,9 @@
             {{- end }}
 
             <!-- Description -->
-            <p class="auto">{{ .Params.abstract }}</p>
+            {{ if .Truncated }}
+              <p class="auto">{{ .Summary | plainify }}</p>
+            {{ end }}
 
             <!-- Date & time to read -->
             <div>

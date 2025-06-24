@@ -1,28 +1,27 @@
-+++
-title = "Zeph & Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing"
-date = "2022-03-01"
-tags = ["research", "paper", "ccr2022", "cores2022"]
-abstract  = "We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our open-source system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. We show that carefully choosing which destination prefixes to probe from which vantage point matters for optimizing topology discovery and that a system can learn to improve its assignments based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 3.3M nodes and 19.8M links in a cycle of 15 hours, when deployed on 5 Iris agents. This is 3 times more nodes and 10 times more links than the existing state-of-the-art production system for the same number of prefixes probed."
-+++
+---
+title: "Zeph & Iris map the internet: A resilient reinforcement learning approach to distributed IP route tracing"
+date: "2022-03-01"
+tags: ["research", "paper", "ccr2022", "cores2022"]
+---
 
 **Matthieu Gouel**, Kevin Vermeulen, Maxime Mouchet, Justin P. Rohrer, Olivier Fourmaux, Timur Friedman
 
-![20220301CCR](/img/20220301CCR.png)  
+![20220301CCR](/img/20220301CCR.png)
 *Representation of the IP-level graph of the internet measured with Iris (credits to [Maxime Mouchet](https://www.maxmouchet.com)).*
 
 We describe a new system for distributed tracing at the IP level of the routes that packets take through the IPv4 internet. Our Zeph algorithm coordinates route tracing efforts across agents at multiple vantage points, assigning to each agent a number of /24 destination prefixes in proportion to its probing budget and chosen according to a reinforcement learning heuristic that aims to maximize the number of multipath links discovered. Zeph runs on top of Iris, our open-source system for orchestrating internet measurements across distributed agents of heterogeneous probing capacities. We show that carefully choosing which destination prefixes to probe from which vantage point matters for optimizing topology discovery and that a system can learn to improve its assignments based on previous measurements. After 10 cycles of probing, Zeph is capable of discovering 3.3M nodes and 19.8M links in a cycle of 15 hours, when deployed on 5 Iris agents. This is 3 times more nodes and 10 times more links than the existing state-of-the-art production system for the same number of prefixes probed.
 
 ---
 
-Paper on ACM library: https://dl.acm.org/doi/10.1145/3523230.3523232  
-Paper in Open Access: https://hal.archives-ouvertes.fr/hal-03597580/document  
+Paper on ACM library: https://dl.acm.org/doi/10.1145/3523230.3523232
+Paper in Open Access: https://hal.archives-ouvertes.fr/hal-03597580/document
 Iris website: https://iris.dioptra.io/#/
 
 French adaptation presented at CoRes 2022: https://hal.archives-ouvertes.fr/hal-03656974/document
 
 ---
 
-Source code of Iris: https://github.com/dioptra-io/iris  
+Source code of Iris: https://github.com/dioptra-io/iris
 Source code of Zeph: https://github.com/dioptra-io/zeph
 
 Source code of the evaluation section of the paper: https://github.com/dioptra-io/zeph-evaluation

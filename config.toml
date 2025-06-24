@@ -9,7 +9,7 @@ pagerSize = 10
 [menu]
 [[menu.main]]
 identifier = "about"
-name = "About me"
+name = "About"
 url = "/about/"
 weight = 2
 
@@ -23,7 +23,7 @@ icon = "mail"
 name = "Mail"
 url = "mailto:matthieu.gouel@protonmail.com"
 [[params.social]]
-icon = "github"
+icon = "brand-github"
 name = "Github"
 url = "https://github.com/matthieugouel"
 [[params.social]]
