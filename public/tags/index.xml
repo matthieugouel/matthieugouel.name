@@ -6,26 +6,19 @@
     <description>Recent content in Tags on Matthieu Gouel</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Peering</title>
-      <link>http://localhost:1313/tags/peering/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/peering/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Probing</title>
-      <link>http://localhost:1313/tags/probing/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/probing/</guid>
+      <title>NXTDR</title>
+      <link>http://localhost:1313/tags/nxtdr/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nxtdr/</guid>
       <description></description>
     </item>
     <item>
       <title>Project</title>
       <link>http://localhost:1313/tags/project/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/project/</guid>
       <description></description>
     </item>
