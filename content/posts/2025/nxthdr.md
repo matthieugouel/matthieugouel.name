@@ -1,7 +1,7 @@
 ---
 title: "Announcing nxthdr: A Non-Profit Platform for Internet Research and Education"
 date: "2025-09-30"
-tags: ["project", "NXTDR"]
+tags: ["project", "NXTHDR"]
 ---
 
 
