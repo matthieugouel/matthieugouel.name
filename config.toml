@@ -16,7 +16,7 @@ weight = 2
 [params]
 author = "Matthieu Gouel"
 avatar = "avatar.png"
-description = "Systems Engineer @Cloudflare"
+description = "Senior Systems Engineer @Cloudflare"
 menu_item_separator = " - "
 [[params.social]]
 icon = "mail"
