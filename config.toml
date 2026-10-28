@@ -1,7 +1,9 @@
 baseURL = "https://matthieugouel.name"
 title = "Matthieu Gouel"
-theme = "m10c"
 enableEmoji = true
+
+[markup.highlight]
+style = "github"
 
 [pagination]
 pagerSize = 10
@@ -17,7 +19,6 @@ weight = 2
 author = "Matthieu Gouel"
 avatar = "avatar.png"
 description = "Senior Systems Engineer @Cloudflare"
-menu_item_separator = " - "
 [[params.social]]
 icon = "mail"
 name = "Mail"
@@ -31,9 +32,3 @@ icon = "book"
 name = "Scholar"
 url = "https://scholar.google.fr/citations?user=Ltb5srIAAAAJ&hl=fr&oi=ao"
 
-[params.style]
-darkestColor = "#010408"
-darkColor = "#0D1116"
-lightColor = "#afbac4"
-lightestColor = "#ffffff"
-primaryColor = "#f6f6f6"
