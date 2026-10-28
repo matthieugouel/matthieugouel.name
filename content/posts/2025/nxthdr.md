@@ -70,3 +70,19 @@ Looking ahead, we plan to expand to more IXPs and increase the number of probing
 
 If you are interested in supporting this initiative, please reach out at [admin@nxthdr.dev](mailto:admin@nxthdr.dev).
 
+
+## How to Cite
+
+All nxthdr data is in the public domain, so citing it is not required. However, if you use the platform or its data in your research, we encourage you to acknowledge it for transparency and reproducibility:
+
+```bibtex
+@misc{nxthdr2024,
+  title        = {{nxthdr}: An Open Platform for Internet Research},
+  author       = {Matthieu Gouel},
+  year         = {2024},
+  howpublished = {\url{https://nxthdr.dev}},
+  note         = {An open platform for Internet peering, measurements, and research collaboration},
+}
+```
+
+More details, including a suggested acknowledgment text, are on the [How to Cite Us](https://docs.nxthdr.dev/docs/reference/citation/) page of the documentation.
