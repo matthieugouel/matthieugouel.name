@@ -4,6 +4,8 @@ date: "2022-03-01"
 tags: ["research", "paper", "ccr2022", "cores2022"]
 ---
 
+Published in ACM SIGCOMM CCR, this paper presents Zeph and Iris, a reinforcement learning algorithm and an open-source platform that together trace IPv4 routes from many vantage points, finding 3 times more nodes and 10 times more links than the state of the art.
+
 ![20220301CCR](/img/20220301CCR.png)
 
 *Representation of the IP-level graph of the internet measured with Iris (credits to [June Mouchet](https://june.bzh/)).*

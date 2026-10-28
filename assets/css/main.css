@@ -227,11 +227,6 @@ main.wrap {
   font-size: 1.05rem;
   line-height: 1.55;
   color: var(--muted);
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  overflow: hidden;
 }
 
 /* Meta & tags */

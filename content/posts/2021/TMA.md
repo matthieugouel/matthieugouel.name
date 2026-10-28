@@ -4,6 +4,8 @@ date: "2021-09-14"
 tags: ["research", "paper", "tma2021"]
 ---
 
+At TMA 2021, we took a first look at how stable IP geolocation databases are over time, and showed that picking one weekly snapshot over another can noticeably change research results.
+
 ![20210914TMA](/img/20210914TMA.png)
 
 IP geolocation has myriad applications. While a body of prior research has investigated the accuracy of geolocation databases, we take a first look at their stability. Using a large collection of snapshots from a popular geolocation database, we examine the longitudinal evolution of its location mappings and address coverage. Across different classes of IP addresses, we find that significant differences can exist even between two successive weekly snapshots - a previously underappreciated source of potential error. To assess the sensitivity of research results to the geo database instance, we examine a prior study that used geolocation. Using their data and methodology, we generate results for each database instance available during their measurement period, i.e., the hypothetical results had the authors used a different snapshot. We show that the median distance of addresses considered shifted over 100km from ground truth and the coverage differed by 30% - potentially impacting the conclusions of this prior study. Based on our findings, we recommend best practices when using geolocation databases for network research to encourage reproducibility and soundness.

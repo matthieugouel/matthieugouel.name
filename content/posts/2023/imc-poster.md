@@ -4,6 +4,8 @@ date: "2023-10-24"
 tags: ["research", "poster", "imc2023"]
 ---
 
+Our IMC 2023 poster presents MetaTrace, an open-source framework built on ClickHouse that processes billions of traceroutes on a single server.
+
 The objective of this research is to contribute towards the development of an open-source framework for processing large-scale traceroute datasets. By providing such a framework, we aim to benefit the community by saving time in everyday traceroute analysis and enabling the design of new scalable reactive measurements, where prior traceroute measurements are leveraged to make informed decisions for future ones.
 It is important to clarify that our goal is not to surpass proprietary solutions like BigQuery, which are utilized by CDNs for processing billions of traceroutes. These proprietary solutions are not freely accessible to the public, whereas our focus is on creating an open and freely available framework for the wider community.
 Our contributions include (1) sharing the ideas and thinking process behind building MetaTrace, which efficiently utilizes ClickHouse features for traceroute processing; and (2) providing an open-source implementation of MetaTrace.

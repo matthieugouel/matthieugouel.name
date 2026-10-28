@@ -4,6 +4,8 @@ date: "2023-12-08"
 tags: ["research", "workshop", "conext2023"]
 ---
 
+Presented at the CoNEXT 2023 Student Workshop, this paper quantifies the risks of high-speed probing tools like ZMap and Yarrp, and recommends how to use them ethically.
+
 What if tomorrow, hundreds, thousands, or even more people start sending 100,000 packets per second into the network using high speed probing? It is reasonable to think that this would not be a desirable scenario for the Internet. However, this might already be taking place, as high speed probing techniques such as ZMap and Yarrp, the high speed evolution of Ping and Traceroute, are extensively used by the network research community and beyond. If they can definitely help for improving our understanding of the Internet, very little work has been done to examine their potential negative impact, i.e., their potential harm to the Internet’s infrastructure, or their harm to the quality of measurement results. In this paper, we quantify the risks of those techniques, and provide recommendations on how to put in place high-speed ethical probing methods.
 
 <!--more-->
